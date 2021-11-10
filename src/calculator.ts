@@ -1,5 +1,3 @@
-//   TODO:    TESTTTTTT!!!
-
 // translate Infix Notation to Reverse Polish Notation
 const makeQueue = (buffer: Array<number | string>): Array<number | string> => {
   const queue = new Array<number | string>();
@@ -13,7 +11,7 @@ const makeQueue = (buffer: Array<number | string>): Array<number | string> => {
   return queue;
 };
 
-export const calcurate = (buffer: Array<number | string>): [number, string] => {
+export const calculate = (buffer: Array<number | string>): [number, string] => {
   const stack: Array<number> = [];
 
   makeQueue(buffer).forEach((element) => {

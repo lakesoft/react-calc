@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CalcState, CalcStateKind, initialCalcState, reduceCalcState } from './calcState';
-import { calcurate } from './calculator';
+import { calculate } from './calculator';
 import { Display } from './Display';
 import { History } from './History';
 
@@ -34,7 +34,7 @@ export const Calc = () => {
 
     if (operator === '=') {
       if (calcState === CalcStateKind.S3) {
-        const [result, text] = calcurate([...buffer, displayedValue]);
+        const [result, text] = calculate([...buffer, displayedValue]);
         setDisplayedValue(result);
         setBuffer([]);
         setHistories([...histories, text]);
@@ -56,7 +56,7 @@ export const Calc = () => {
 
       case CalcStateKind.S3:
         {
-          const [result, text] = calcurate([...buffer, displayedValue]);
+          const [result, text] = calculate([...buffer, displayedValue]);
           setDisplayedValue(result);
           setBuffer([result, operator]);
           setHistories([...histories, text]);
