@@ -1,3 +1,6 @@
+# Calc state
+![calc-state](https://user-images.githubusercontent.com/781493/140073471-989f584d-8c04-42d5-95e7-f97e83940c42.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
